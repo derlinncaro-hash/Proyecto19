@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente Reddit</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <main id="tablero">
+        <div id="carriles"></div>
+        <button id="btn-agregar" aria-label="Agregar subreddit">+</button>
+    </main>
+
+    <!-- Ventana emergente para pedir el nombre del subreddit -->
+    <div id="ventana" class="oculto">
+        <div class="caja">
+            <label for="entrada">Ingresa el número del usuario (1 a 10)</label>
+            <input id="entrada" type="text" placeholder="Ejemplo: 1">
+            <p id="error-ventana" class="error"></p>
+            <button id="btn-confirmar">Agregar Usuario</button>
+            <button id="btn-cancelar" class="secundario">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
